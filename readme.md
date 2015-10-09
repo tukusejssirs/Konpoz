@@ -14,6 +14,7 @@ scrum master je Otto (aka manager xD)
       - kontakt
       - ?feedback
 - [ ] html5 & css3 (back-end) (Sida)
+- [ ] no robots/spiders (captcha & .robots file)
 - [ ] grafika (front-end, gui)
       - fonty (woff) – [Linux Libertine G](http://numbertext.org/linux/) alebo [Ubuntu](http://font.ubuntu.com)?
       - favicon
