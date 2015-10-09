@@ -4,7 +4,7 @@ scrum master je Otto (aka manager xD)
 
 - [x] kazdy sa prihlasi na github.com [9/10/2015]
 - [ ] nainstaluje si github.com klienta
-      - odporucam kuknut sa aj na [SmartGit](http://www.syntevo.com/smartgit/)
+      - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
 - [ ] navrh databazy (postgre) - Zoran
       - automaticke vymazanie neaktualnych pozvanok
