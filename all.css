@@ -1,0 +1,160 @@
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_r.woff") format('woff');
+}
+
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_z.woff") format('woff');
+font-weight: 600;
+}
+
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_b.woff") format('woff');
+font-weight: bold;
+}
+
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_i.woff") format('woff');
+font-style: italic;
+}
+
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_bi.woff") format('woff');
+font-weight: bold;
+font-style: italic;
+}
+
+@font-face {
+font-family: "Linux Libertine G";
+src: url("fnts/linlibg_zi.woff") format('woff');
+font-style: italic;
+font-weight: 600;
+}
+
+/*#########################################################################################*/
+
+body{
+font-family: "Linux Libertine G";
+}
+
+a:link{
+text-decoration: none;
+color:#0066FF;
+}
+
+a:visited{
+text-decoration: none;
+color:#0066FF;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+a:active{
+text-decoration: none;
+}
+
+h1, h2{
+text-align:center;
+}
+
+article{
+padding:10px;
+padding-bottom:30px;
+width: 86%;
+}
+
+aside{
+margin: 0 1%;
+width: 10%;
+}
+
+table{
+margin: 0 auto;
+}
+
+table, th, td, tr{
+border: 1px solid black;
+vertical-align: middle;
+}
+
+tr:nth-child(even) {background: #ECECEC}
+tr:nth-child(odd) {background: #FFF}
+
+th{
+font-weight: bold;
+text-align: center;
+font-size: 14pt;
+background-color: #D4D4D4;
+}
+
+.city{
+background-color: #D4D4D4;
+}
+
+.tbl_c{
+text-align: center;
+}
+
+div>span:nth-of-type(1){
+text-align:right
+}
+
+div>span:nth-of-type(3){
+text-align:left
+}
+
+div>span.slash:after{
+content:"/";
+}
+
+div>span.comma:after{
+content:",";
+}
+
+div>span.slashy, div>span.slash{
+display: table-cell;
+width: 6em;
+}
+
+div>span.comma, div>span.commy{
+display: table-cell;
+width: 2em;
+}
+
+div>span.slash{
+width: 1.5em;
+text-align:center
+}
+
+div>span.comma{
+width: 0em;
+text-align:center;
+}
+
+footer{
+font-family: "Linux Libertine G";
+text-align: center;
+font-size: 11pt;
+position:absolute;
+bottom:0;
+width:99%;
+height:30px;
+}
+
+.copyleft{
+display: inline-block;
+text-align: right;
+margin: 0px;
+-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
