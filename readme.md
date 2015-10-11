@@ -6,7 +6,7 @@ scrum master je Otto (aka manager xD)
 - [ ] nainstaluje si github.com klienta
       - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
-- [ ] navrh databazy (postgre) - Zoran
+- [x] navrh databazy (postgre) - Zoran [11/10/2015]
       - automaticke vymazanie neaktualnych pozvanok
 - [ ] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov)
       - domov
