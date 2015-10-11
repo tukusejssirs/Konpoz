@@ -8,7 +8,8 @@ scrum master je Otto (aka manager xD)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
 - [x] navrh databazy (postgre) - Zoran [11/10/2015]
       - automaticke vymazanie neaktualnych pozvanok
-- [ ] registracia webhostingu a domeny (diskusia)
+- [ ] registracia webhostingu a domeny ([diskusia](diskusia_webhosting.md)
+-)
 - [ ] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov)
       - domov
       - o nas
