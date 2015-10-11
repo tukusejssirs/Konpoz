@@ -1,0 +1,3 @@
+- Praca s `git`-om v terminali (aj vo Window$e)
+  - Vysvetlivky
+  - Instalacia
