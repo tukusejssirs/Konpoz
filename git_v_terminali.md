@@ -33,6 +33,7 @@ $ git config --global user.email "you@example.com"      # bud je to email, ktory
 $ git config --global push.default simple
 ```
 [Tu](https://github.com/settings/emails) sa daju prezriet, prip prestavit nastavania ohladom emailu/-ov.
+
 ### Nastavenie `ssh` pre `git`
 
 Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git)
