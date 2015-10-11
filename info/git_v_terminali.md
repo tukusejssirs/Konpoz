@@ -75,7 +75,7 @@ $ git clone url_adresa_repositaru /cesta/kde/sa/ma/sklonovat/repozitar  # vseobe
 $ git clone git@github.com:tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
 ```
 
-:star2: Podobne sa daju sklonovat aj ine repository z github-u.
+:star2: Podobne sa daju sklonovat aj ine repository z github-u.<br/>
 :star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje),<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avsak ak existuje, musi byt prazdny.<br/>
 :star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)<br/>
