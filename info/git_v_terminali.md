@@ -26,10 +26,10 @@ $ git config --global user.name "prezyvka"              # prezyvka na github-e, 
 $ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali
                                                         # pri registracii (to je predvolene)
                                                         # alebo prezyvka@github.com (podla
-                                                        # nastaveni na github-e
+                                                        # nastaveni na github-e [1]
 $ git config --global push.default simple
 ```
-[Tu](https://github.com/settings/emails) sa daju prezriet, prip prestavit nastavania ohladom emailu/-ov.
+[1] [Tu](https://github.com/settings/emails) sa daju prezriet, prip prestavit nastavania ohladom emailu/-ov.
 
 ### Nastavenie `ssh` pre `git`
 
