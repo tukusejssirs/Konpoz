@@ -38,20 +38,28 @@ $ git clone url_adresa_repositaru /cesta/kde/sa/ma/sklonovat/repozitar  # vseobe
 $ git clone https://github.com/tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
 ```
 
-:star2: Podobne sa daju sklonovat aj ine repository z github-u.
-:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje), avsak ak existuje, musi byt prazdny.
+:star2: Podobne sa daju sklonovat aj ine repository z github-u.<br/>
+:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje), avsak ak existuje, musi byt prazdny.<br/>
 :star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)
 :star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
 
-## Nastavenie `ssh`
+## Nastavenie `ssh` pre `git`
 
 Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git)
 
+### Vygenerovanie verejneho/sukromneho rsa klucoveho paru
+
 ```bash
-$ git remote set-url origin git@github.com:nickname/Konpoz.git  # odporucam pouzivat `ssh` (Secure Shell) (dovody su nizsie)
+public/private rsa key pair.
 ```
 
-:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.
+### Nastavenie `git`-u
+
+```bash
+$ git remote set-url origin git@github.com:nickname/Konpoz.git  # `origin` moze byt cokolvek
+```
+
+:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.	
 
 # mkdir databaza && mv databaza_skica.md databaza
 
@@ -111,3 +119,10 @@ drwxr-xr-x 8 root root  4096  11 Oct 2015,  3.53 pm CEST	 .git/
 drwxr-xr-x 3 root root  4096  11 Oct 2015,  3.06 pm CEST	 webstranka/
 
 
+
+## Zdroje
+
+[Git Basics Working with Remotes](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+[Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)
+[Git Push Requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
+[Mastering	 MarkDown](https://guides.github.com/features/mastering-markdown/)
