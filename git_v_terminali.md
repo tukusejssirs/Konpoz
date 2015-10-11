@@ -43,7 +43,7 @@ $ git clone https://github.com/tukusejssirs/Konpoz.git ~/konpoz  # konkretny pri
 :star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)
 :star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
 
-[3:22pm]0 root@lnv:~/mega.d/.prgs/konpoz
+
 # mkdir databaza && mv databaza_skica.md databaza
 
 [3:52pm]0 root@lnv:~/mega.d/.prgs/konpoz
