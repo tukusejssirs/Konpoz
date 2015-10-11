@@ -20,4 +20,5 @@ Aky chceme nazov stranky? Ak to chceme pouzit aj na ine ucely ako na semproj3, m
 
 # Diskusia
 
-@siduska @norton1119 @janchvojka @diduska @zorvar
+@tukusejssirs by rad pocul od kazdeho z Vas nazor k tomuto vsetkemu. Vdaka. :)
+@siduska @norton1119 @janchvojka @diduska
