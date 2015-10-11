@@ -23,11 +23,8 @@ $ sudo pacman -Syyu --noconfirm && sudo pacman -S --noconfirm git
 
 Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github.io/).
 
-:exclamation: Symboly `$` a `#` na zaciatku prikazov nie su sucastou prikazov; ony len naznacuju, ze ich treba spustit ako bezny<br/>
-	pouzivatel (`$`) alebo ako root (`#`).<br/>
-:star2: Operator `&&` znamena, ze prikaz za nim sa vykona vtedy a len vtedy, ak prikaz pred nim, bude mat exitovu<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hodnotu `0` (teda bude uspesny). Alternativnym operatorom je `;`, ktory na rozdiel od operatoru `&&` ma tu vlastnost,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ze prikaz za nim sa vykona aj pri nenulovej hodnote.
+:exclamation: Symboly `$` a `#` na zaciatku prikazov nie su sucastou prikazov; ony len naznacuju, ze ich treba spustit ako bezny pouzivatel (`$`) alebo ako root (`#`).<br/>
+:star2: Operator `&&` znamena, ze prikaz za nim sa vykona vtedy a len vtedy, ak prikaz pred nim, bude mat exitovu hodnotu `0` (teda bude uspesny). Alternativnym operatorom je `;`, ktory na rozdiel od operatoru `&&` ma tu vlastnost, ze prikaz za nim sa vykona aj pri nenulovej hodnote.
 
 ## Nastavenie `git`-u
 
@@ -44,19 +41,21 @@ $ git config --global push.default simple
 
 ### Nastavenie `ssh` pre `git`
 
-Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git), odporucam nastavit si ssh kluc. Hoci su aj nejake bezpecnostne vyhody, okrem ineho po nastaveni ssh kluca do github-u, pri pushovani (uploadovani) novych suborov nebudete musiet zakazdym zadavat meno a heslo od svoju uctu na github-e.
+Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git), odporucam vsak nastavit si ssh kluc. Hoci su aj nejake bezpecnostne vyhody, okrem ineho po nastaveni ssh kluca do github-u, pri pushovani (uploadovani) novych suborov nebudete musiet zakazdym zadavat meno a heslo od svoju uctu na github-e.
+
+:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.
 
 ### Vygenerovanie verejneho/sukromneho rsa klucoveho paru
 
 Je potrebne mat vytvoreny nejaky `ssh` kluc. Ak taky nemate, mozete si ho jednoducho vygenerovat:
 
 ```bash
-ssh-keygen -f ~/.ssh/id_rsa -P ""
-cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirovat
-                                   # (pravdepodobne to nepojde pomocou klavesovej
-                                   # skratky `crl+c`, ale iba pomocou `ctrl+shift+c`,
-                                   # pretoze ta prva/bezna je prednastavena
-                                   # na ukoncenie programu)
+$ ssh-keygen -f ~/.ssh/id_rsa -P ""
+$ cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirovat
+                                    # (pravdepodobne to nepojde pomocou klavesovej
+                                    # skratky `crl+c`, ale iba pomocou `ctrl+shift+c`,
+                                    # pretoze ta prva/bezna je prednastavena
+                                    # na ukoncenie programu)
 ```
 
 ### Priradenie ssh kluca pre git
@@ -79,8 +78,7 @@ $ git clone git@github.com:tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
 ```
 
 :star2: Podobne sa daju sklonovat aj ine repository z github-u.<br/>
-:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje),<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avsak ak existuje, musi byt prazdny.<br/>
+:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje), avsak ak existuje, musi byt prazdny.<br/>
 :star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)<br/>
 :star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
 
@@ -91,7 +89,7 @@ $ git clone git@github.com:tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
 $ git remote set-url origin git@github.com:nickname/Konpoz.git  # `origin` moze byt cokolvek
 ```
 
-:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.	
+
 
 # mkdir databaza && mv databaza_skica.md databaza
 
