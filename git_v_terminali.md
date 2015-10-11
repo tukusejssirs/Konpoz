@@ -25,7 +25,7 @@ Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github
 Nasledovne tri prikazy je nutne spustit pre spravne pouzivanie programu `git`.
 
 ```bash
-$ git config --global user.name "prezyvka"  # prezyvka na github-e, napr "tukusejssirs"
+$ git config --global user.name "prezyvka"              # prezyvka na github-e, napr "tukusejssirs"
 $ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali
                                                         # pri registracii (to je predvolene)
                                                         # alebo prezyvka@github.com (podla
