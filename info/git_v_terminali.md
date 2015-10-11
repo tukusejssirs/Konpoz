@@ -52,10 +52,10 @@ Je potrebne mat vytvoreny nejaky `ssh` kluc. Ak taky nemate, mozete si ho jednod
 ```bash
 $ ssh-keygen -f ~/.ssh/id_rsa -P ""
 $ cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirovat
-                                    # (pravdepodobne to nepojde pomocou klavesovej
-                                    # skratky `crl+c`, ale iba pomocou `ctrl+shift+c`,
-                                    # pretoze ta prva/bezna je prednastavena
-                                    # na ukoncenie programu)
+                                     # (pravdepodobne to nepojde pomocou klavesovej
+                                     # skratky `crl+c`, ale iba pomocou `ctrl+shift+c`,
+                                     # pretoze ta prva/bezna je prednastavena
+                                     # na ukoncenie programu)
 ```
 
 ### Priradenie ssh kluca pre git
