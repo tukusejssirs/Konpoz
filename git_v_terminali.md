@@ -51,8 +51,15 @@ Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://
 
 ### Vygenerovanie verejneho/sukromneho rsa klucoveho paru
 
+Je potrebne mat vytvoreny nejaky `ssh` kluc. Ak taky nemate, mozete si ho jednoducho vygenerovat:
+
 ```bash
-public/private rsa key pair.
+ssh-keygen -f ~/.ssh/id_rsa -P ""
+cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirovat
+                                   # (pravdepodobne to nepojde pomocou klavesovej
+                                   # skratky `crl+c`, ale iba pomocou `ctrl+shift+c`,
+                                   # pretoze ta prva/bezna je prednastavena
+                                   # na ukoncenie programu)
 ```
 
 ### Nastavenie `git`-u
