@@ -36,7 +36,7 @@ $ git config --global push.default simple
 
 ### Nastavenie `ssh` pre `git`
 
-Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git)
+Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git), odporucam nastavit si ssh kluc. Hoci su aj nejake bezpecnostne vyhody, okrem ineho po nastaveni ssh kluca do github-u, pri pushovani (uploadovani) novych suborov nebudete musiet zakazdym zadavat meno a heslo od svoju uctu na github-e.
 
 ### Vygenerovanie verejneho/sukromneho rsa klucoveho paru
 
