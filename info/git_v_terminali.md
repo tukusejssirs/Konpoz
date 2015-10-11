@@ -24,7 +24,7 @@ $ sudo pacman -Syyu --noconfirm && sudo pacman -S --noconfirm git
 Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github.io/).
 
 :exclamation: Symboly `$` a `#` na zaciatku prikazov nie su sucastou prikazov; ony len naznacuju, ze ich treba spustit ako bezny<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pouzivatel (`$`) alebo ako root (`#`).<br/>
+\tpouzivatel (`$`) alebo ako root (`#`).<br/>
 :star2: Operator `&&` znamena, ze prikaz za nim sa vykona vtedy a len vtedy, ak prikaz pred nim, bude mat exitovu<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hodnotu `0` (teda bude uspesny). Alternativnym operatorom je `;`, ktory na rozdiel od operatoru `&&` ma tu vlastnost,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ze prikaz za nim sa vykona aj pri nenulovej hodnote.
