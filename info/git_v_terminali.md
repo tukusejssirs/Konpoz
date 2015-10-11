@@ -1,5 +1,4 @@
 # Praca s `git`-om v terminali (aj vo Window$e)
-
 ## Instalacia
 
 Okrem Linuxu a terminalu potrebujete mat nainstalovany program `git`.
