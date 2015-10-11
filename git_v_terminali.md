@@ -10,7 +10,6 @@ $ sudo apt-get -yq update && sudo apt-get -yq install git
 ```
 
 V Arch Linuxe zase nasledovny prikaz:
-
 ```bash
 $ sudo pacman -Syyu --noconfirm && sudo pacman -S --noconfirm git
 ```
@@ -22,7 +21,6 @@ Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github
 ## Nastavenie `git`-u
 
 Nasledovne tri prikazy je nutne spustit pre spravne pouzivanie programu `git`.
-
 ```bash
 $ git config --global user.name "prezyvka"              # prezyvka na github-e, napr "tukusejssirs"
 $ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali
