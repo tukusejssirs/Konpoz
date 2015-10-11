@@ -1,6 +1,6 @@
 # Praca s `git`-om v terminali (aj vo Window$e)
 
-Preco je dobre naucit sa pouzivat `git` na spravu repozitara? Pretoze je to rychlejsie a po malom zauceni i jednoduchsie.
+Preco je dobre naucit sa pouzivat `git` na spravu repozitara? Pretoze je to rychlejsie a po malom zauceni i&nbsp;jednoduchsie.
 
 ## Vysvetlivky
 
@@ -23,7 +23,8 @@ $ sudo pacman -Syyu --noconfirm && sudo pacman -S --noconfirm git
 
 Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github.io/).
 
-:exclamation: Symboly `$` a `#` na zaciatku prikazov nie su sucastou prikazov; ony len naznacuju, ze ich treba spustit ako bezny pouzivatel (`$`) alebo ako root (`#`).
+:exclamation: Symboly `$` a `#` na zaciatku prikazov nie su sucastou prikazov; ony len naznacuju, ze ich treba spustit ako bezny pouzivatel (`$`) alebo ako root (`#`).<br/>
+:star2: Operator `&&` znamena, ze prikaz za nim sa vykona vtedy a len vtedy, ak prikaz pred nim, bude mat exitovu hodnotu `0` (teda bude uspesny). Alternativnym operatorom je `;`, ktory na rozdiel od operatoru `&&` ma tu vlastnost, ze prikaz za nim sa vykona aj pri nenulovej hodnote.
 
 ## Nastavenie `git`-u
 
