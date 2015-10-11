@@ -52,10 +52,14 @@ cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirova
 
 Skopirovany kluc treba ulozit do nastaveni svojho uctu na [github-e](https://github.com/settings/ssh) (treba kliknut na `Add SSH key` vybrat lubovolny nazov/Title pre ssh kluc, vlozit prave skopirovany kluc do textoveho pola Key a nakoniec pridat kluc / Add key).
 
+### 
+
+
 
 ## Praca s `git`-om
 
 ### Klonovanie repozitaru
+
 Aby sme mohli pracovat, najskor si treba ‘sklonovat’ (rozumej skopirovat/stiahnut) repository (repozitar, zdroj, skrysa) daneho projektu z github.com.
 
 ```bash
