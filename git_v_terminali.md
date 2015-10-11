@@ -1,4 +1,4 @@
-# Praca s `git`-om v terminali (aj vo Win-e)
+# Praca s `git`-om v terminali (aj vo Window$e)
 
 ## Instalacia
 
