@@ -44,5 +44,5 @@ pomocne stranky
 
 Otto
 ----
-[ ] github autosync dir (on client lnx/win)
-[ ] autosync to web hosting storage
+- [ ] github autosync dir (on client lnx/win)
+- [ ] autosync to web hosting storage
