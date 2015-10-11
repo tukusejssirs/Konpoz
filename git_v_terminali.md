@@ -24,10 +24,10 @@ Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github
 
 ```bash
 $ git config --global user.name "nickname_na_github-e"  # napr "tukusejssirs"
-$ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali \
-                                                          pri registracii (to je predvolene) \
-                                                          alebo nickname@github.com (podla \
-                                                          nastaveni na github.com)
+$ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali
+                                                        # pri registracii (to je predvolene)
+                                                        # alebo nickname@github.com (podla
+                                                        # nastaveni na github.com)
 $ git config --global push.default simple
 ```
 
