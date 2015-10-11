@@ -43,7 +43,7 @@ $ git config --global push.default simple
 
 Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git), odporucam vsak nastavit si ssh kluc. Hoci su aj nejake bezpecnostne vyhody, okrem ineho po nastaveni ssh kluca do github-u, pri pushovani (uploadovani) novych suborov nebudete musiet zakazdym zadavat meno a heslo od svoju uctu na github-e.
 
-:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.
+:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na `https://github.com/tukusejssirs/Konpoz.git`.
 
 ### Vygenerovanie verejneho/sukromneho rsa klucoveho paru
 
