@@ -1,4 +1,12 @@
 # Praca s `git`-om v terminali (aj vo Window$e)
+
+Preco je dobre naucit sa pouzivat `git` na spravu repozitara? Pretoze je to rychlejsie a po malom zauceni i jednoduchsie.
+
+## Vysvetlivky
+
+:exclamation: Veta za tymto emotikonom je upozornenie.<br/>
+:star2: Veta za tymto emotikonom je vysvetlenim alebo doplnujucou informaciou.
+
 ## Instalacia
 
 Okrem Linuxu a terminalu potrebujete mat nainstalovany program `git`.
