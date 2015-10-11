@@ -22,30 +22,18 @@ Windowsaci si mozu nainstalovat [Git for Windows](https://git-for-windows.github
 
 ## Nastavenie `git`-u
 
+Nasledovne tri prikazy je nutne spustit pre spravne pouzivanie programu `git`.
+
 ```bash
-$ git config --global user.name "nickname_na_github-e"  # napr "tukusejssirs"
+$ git config --global user.name "prezyvka"  # prezyvka na github-e, napr "tukusejssirs"
 $ git config --global user.email "you@example.com"      # bud je to email, ktory ste zadali
                                                         # pri registracii (to je predvolene)
-                                                        # alebo nickname@github.com (podla
-                                                        # nastaveni na github.com)
+                                                        # alebo prezyvka@github.com (podla
+                                                        # nastaveni na [github-e](https://github.com/settings/emails))
 $ git config --global push.default simple
 ```
 
-## Praca s `git`-om
-
-Aby sme mohli pracovat, najskor si treba ‘sklonovat’ (rozumej skopirovat/stiahnut) repository (repozitar, zdroj, skrysa) daneho projektu z github.com.
-
-```bash
-$ git clone url_adresa_repositaru /cesta/kde/sa/ma/sklonovat/repozitar  # vseobecny zapis
-$ git clone https://github.com/tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
-```
-
-:star2: Podobne sa daju sklonovat aj ine repository z github-u.<br/>
-:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje), avsak ak existuje, musi byt prazdny.<br/>
-:star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)<br/>
-:star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
-
-## Nastavenie `ssh` pre `git`
+### Nastavenie `ssh` pre `git`
 
 Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git)
 
@@ -62,7 +50,27 @@ cat ~/.ssh/id_rsa                  # zobrazi ssh-rsa kluc, ktory treba skopirova
                                    # na ukoncenie programu)
 ```
 
-### Nastavenie `git`-u
+### Priradenie ssh kluca pre git
+
+Skopirovany kluc treba ulozit do nastaveni svojho uctu na [github-e](https://github.com/settings/ssh) (treba kliknut na `Add SSH key` vybrat lubovolny nazov/Title pre ssh kluc, vlozit prave skopirovany kluc do textoveho pola Key a nakoniec pridat kluc / Add key).
+
+
+## Praca s `git`-om
+
+Aby sme mohli pracovat, najskor si treba ‘sklonovat’ (rozumej skopirovat/stiahnut) repository (repozitar, zdroj, skrysa) daneho projektu z github.com.
+
+```bash
+$ git clone url_adresa_repositaru /cesta/kde/sa/ma/sklonovat/repozitar  # vseobecny zapis
+$ git clone https://github.com/tukusejssirs/Konpoz.git ~/konpoz  # konkretny prikaz
+```
+
+:star2: Podobne sa daju sklonovat aj ine repository z github-u.<br/>
+:star2: Cielovy adresar, kde sa ma sklonovat repozitar, nemusi byt vytvoreni (prikaz `git` ho vytvori, ak neexistuje), avsak ak existuje, musi byt prazdny.<br/>
+:star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)<br/>
+:star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
+
+
+
 
 ```bash
 $ git remote set-url origin git@github.com:nickname/Konpoz.git  # `origin` moze byt cokolvek
