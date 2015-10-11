@@ -4,7 +4,7 @@
 
 Okrem Linuxu a terminalu potrebujete mat nainstalovany program `git`.
 
-V Debian-like systemoch staci v terminali spustit nasledovny prikaz:<br/>
+V Debian-like systemoch staci v terminali spustit nasledovny prikaz:
 ```bash
 $ sudo apt-get -yq update && sudo apt-get -yq install git
 ```
