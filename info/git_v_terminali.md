@@ -156,3 +156,8 @@ drwxr-xr-x 3 root root  4096  11 Oct 2015,  3.06 pm CEST	 webstranka/
 [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)<br/>
 [Git Push Requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)<br/>
 [Mastering	 MarkDown](https://guides.github.com/features/mastering-markdown/)<br/>
+
+## TODO
+
+- dokoncit tutorial<br/>
+- vlozit diakritiku
