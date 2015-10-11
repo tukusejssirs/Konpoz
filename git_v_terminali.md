@@ -43,6 +43,15 @@ $ git clone https://github.com/tukusejssirs/Konpoz.git ~/konpoz  # konkretny pri
 :star2: V Linuxe vlnka (tilde, ~) znaci domovsky priecinok aktualne prihlaseneho pouzivatela (napr /home/meno)
 :star2: Odteraz dalej budem predpokladat, ze ste si sklonovat `konpoz` do priecinku `~/konpoz`.
 
+## Nastavenie `ssh`
+
+Hoci tuto cast je mozne vynechat a dalej pracovat s HTTPS linkami (napr https://github.com/tukusejssirs/Konpoz.git)
+
+```bash
+$ git remote set-url origin git@github.com:nickname/Konpoz.git  # odporucam pouzivat `ssh` (Secure Shell) (dovody su nizsie)
+```
+
+:exclamation: Ak si nenstavite `ssh`, odteraz dalej si v prikazoch prepiste linky `git@github.com:nickname/Konpoz.git` na 'https://github.com/tukusejssirs/Konpoz.git`.
 
 # mkdir databaza && mv databaza_skica.md databaza
 
