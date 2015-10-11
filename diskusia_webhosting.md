@@ -1,6 +1,6 @@
 # Webhosting
 
-@zorvar navrhuje zriesenie ‘riadneho’ webhostingu. @tukusejssirs nie je proti, no treba vybrat sprostredkovatela webhostingu a domeny. Mohlo by sa to hodit i do buducnosti na nejake testy/ulohy, ktore pravdepodobne este dostaneme. A kedze by sme to mali plateny webhosting, nejake ‘zbieranie grosov’ by bolo nevyhnutne.
+@zorvar navrhuje zriesenie ‘riadneho’ webhostingu. @tukusejssirs nie je proti, no treba vybrat sprostredkovatela webhostingu a domeny. Mohlo by sa to hodit i do buducnosti na nejake testy/ulohy, ktore pravdepodobne este dostaneme. Ale kedze by sme mali plateny webhosting, nejake ‘zbieranie grosov’ by bolo nevyhnutne.
 
 # Sprostredkovatel webhostingu
 
