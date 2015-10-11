@@ -152,7 +152,7 @@ drwxr-xr-x 3 root root  4096  11 Oct 2015,  3.06 pm CEST	 webstranka/
 
 ## Zdroje
 
-[Git Basics Working with Remotes](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-[Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)
-[Git Push Requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
-[Mastering	 MarkDown](https://guides.github.com/features/mastering-markdown/)
+[Git Basics Working with Remotes](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)<br/>
+[Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)<br/>
+[Git Push Requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)<br/>
+[Mastering	 MarkDown](https://guides.github.com/features/mastering-markdown/)<br/>
