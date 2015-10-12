@@ -4,7 +4,7 @@
 - [ ] nainstaluje si github.com klienta
       - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
-- [ ] - odporucane: naucit sa pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
+      - odporucane: naucit sa pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
 - [x] navrh databazy (postgre) - Zoran [11/10/2015]
       - automaticke vymazanie neaktualnych pozvanok
 - [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
