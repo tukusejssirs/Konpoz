@@ -31,6 +31,6 @@ li {listt-style: none;}
    } else {
       echo " &nbsp &nbsp &nbsp Spojenie s databazou je funkcne\n";
    }
-$query = "INSERT INTO podujatia VALUES ('$_POST[nazov]','$_POST[prihlaska]','$_POST[datum]')";
-$result = pg_query($query); 
+   $query = "INSERT INTO podujatia VALUES ('$_POST[nazov]','$_POST[prihlaska]','$_POST[datum]')";
+   $result = pg_query($query); 
 ?>
