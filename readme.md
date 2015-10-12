@@ -5,6 +5,7 @@
       - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
       - odporucane: naucit sa pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
+      - [dalsie uzitocne linky a tutorialy](https://gist.github.com/IzzySoft/85627ffcb1ac4b24c9b1)
 - [x] navrh databazy (postgre) - Zoran [11/10/2015]
       - automaticke vymazanie neaktualnych pozvanok
 - [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
