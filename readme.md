@@ -8,7 +8,7 @@
       - odporucane: naucit sa pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
       - [dalsie uzitocne linky a tutorialy](https://gist.github.com/IzzySoft/85627ffcb1ac4b24c9b1)
 - [x] [navrh databazy](databaza/databaza_skica.md) - Zoran [11/10/2015]
-      - automaticke vymazanie neaktualnych pozvanok
+- [x] [navrh html5 stranky s formularom](webstranka/index.html) - Zoran [ 12/10/2015]
 - [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
 - [ ] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov)
       - domov
@@ -28,7 +28,7 @@
 
 ## Stvrty tyzden [30/10/2015 – 6/11/2015]
 #### *Zrealizovanie zobrazenie pozvanok v html5 z db*
-
+- automaticke vymazanie neaktualnych pozvanok
 ## Piaty tyzden [6/11/2015 – 13/11/2015]
 #### *Zrealizovanie prihlasovania a vyhladavania*
 - [ ] ?prihlasovanie
