@@ -1,5 +1,6 @@
 # Osnova
-
+## Prvy tyzden [9/10/2015 – 16/10/2015]
+#### *Priprava projektu*
 - [x] kazdy sa prihlasi na github.com [9/10/2015]
 - [ ] nainstaluje si github.com klienta
       - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
@@ -14,7 +15,9 @@
       - o nas
       - kontakt
       - ?feedback
-- [ ] html5 & css3 (back-end) (Sida)
+## Druhy tyzden [16/10/2015 – 23/10/2015]
+#### *Integracia db do hmtl5 (formaluar)*
+- [ ] html5 & css3 (Sida)
 - [ ] no robots/spiders (captcha & .robots file)
 - [ ] grafika (front-end, gui)
       - fonty (woff) – [Linux Libertine G](http://numbertext.org/linux/) alebo [Ubuntu](http://font.ubuntu.com)?
