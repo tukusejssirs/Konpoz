@@ -37,7 +37,7 @@
 ## Siesty tyzden [20/11/2015 – 27/11/2015]
 #### *Graficke prevedenie stranky I*
 - [ ] no robots/spiders (captcha & .robots file)
-- [ ] grafika (front-end, gui)
+- [ ] grafika (front-end, gui) I
       - fonty (woff) – [Linux Libertine G](http://numbertext.org/linux/) alebo [Ubuntu](http://font.ubuntu.com)?
       - favicon
       - ikony [icons8.com/welovesvg](https://icons8.com/welovesvg)
@@ -46,6 +46,7 @@
 
 ## Siesty tyzden [27/11/2015 – 4/12/2015]
 #### *Graficke prevedenie stranky II*
+- [ ] grafika (front-end, gui) II
       - moznost zmeny temy (dark/light)
       - ?nacitat iba tie obrazky, ktore su na prave viditelnej casti obrazovky (kvoli vykonu/performance)
       - ?[taby/karty](http://webdesignledger.com/principles-for-tabbed-website-widgets) (na menu ALEBO na zjednotenie viacerych stranok do jednej, …)
