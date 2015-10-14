@@ -1,4 +1,4 @@
- <?php echo "Dnes je <b>".date("j.n.20y.")."</b><br>\n"; 
+ <?php echo "Dnes je <b>".date("j.n.20y.")."</b><br>"; 
 
    $host        = "host=127.0.0.1";
    $port        = "port=5432";
