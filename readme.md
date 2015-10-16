@@ -2,22 +2,18 @@
 ## Prvy tyzden [9/10/2015 – 16/10/2015]
 #### *Priprava projektu*
 - [x] kazdy sa zaregistruje na github.com [9/10/2015]
-- [ ] nainstaluje si github.com klienta
+- [x] nainstaluje si github.com klienta
       - odporucam kuknut si na [SmartGit](http://www.syntevo.com/smartgit/) – da na nainstalovat na win-e i na debian(-like) linuxoch; na ostatnych linuxoch na da pouzit *.tar.gz (bez potreby instalacie)
       - dalsie alternativy su [tu](https://git-scm.com/download/gui/linux)
-      - odporucane: naucit sa pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
+      - odporucane: naucit sa priamo pouzivat program `git` ([manual](https://github.com/tukusejssirs/Konpoz/wiki/Git-v-terminali))
       - [dalsie uzitocne linky a tutorialy](https://gist.github.com/IzzySoft/85627ffcb1ac4b24c9b1)
 - [x] [navrh databazy](databaza/databaza_skica.md) - Zoran [11/10/2015]
-- [x] [navrh html5 stranky s formularom](webstranka/index.html) - Zoran [ 12/10/2015]
-- [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
-- [ ] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov)
-      - domov
-      - o nas
-      - kontakt
-      - ?feedback
+- [x] [navrh html5 stranky s formularom](webstranka/index.html) - Zoran [12/10/2015]
 
 ## Druhy tyzden [16/10/2015 – 23/10/2015]
-#### *Zaklad webstranky (html5/css3)*
+#### Webhosting; zaklad webstranky (html5/css3)*
+- [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
+- [x] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov) [17/10/2010]
 - [ ] zapisanie mapy stranky do html5 & css3 (Sida)
 
 ## Treti tyzden [23/10/2015 – 30/10/2015]
