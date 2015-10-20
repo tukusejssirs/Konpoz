@@ -4,8 +4,8 @@ na pridavanie poloziek a " http://195.140.252.48/odpoved.php " pre zobrazenie ak
 
 pre editaciu kodov sa musite pripojit pomocou Putty, Totalcomanc, alebo Midnajt komandera,
 ci podobnej srandy zatial napriklad cez SFTP ako: " aiex@195.140.252.48 " a zadate heslo: " maslo ",
-(neskor doriesime ssh kluce)
+(neskor doriesime ssh kluce) zdrojaky su umiestnene v zlozke: /var/www/
 
-prikazom " mc " sa spusti "midnajt komanč" ktorym sa dostanete do zlozky " /var/www/ "  kde su umiestnene zdrojaky,
-ktore mozte upravovat ... 
+prihlasit cez ssh sa da: ssh aiex@195.140.252.48
+prikazom " mc " sa spusti "midnajt komanč"  
 
