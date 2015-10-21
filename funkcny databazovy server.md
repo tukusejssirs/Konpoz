@@ -14,3 +14,8 @@ Edit (@tukusejssirs): Na server sa da pripojit cez akykolvek ftp klient: pouziti
 - user: `aiex`,
 - pass: `maslo`,
 
+vo windowse v TotalCommander-i je potrebne doinstalovat plugin " SFTP " 
+jednoduchy navod je napriklad na " http://megatron.sk/total-commander-sftp-navod-na-kopirovanie-nastaveni-tc/ "
+                         alebo:  " http://www.miroslavnovak.com/ftps-total-commander-openssl-dll_cz.php  "
+                                 " http://tlukas.eu/tipy-amp-triky/total-commander-a-pripojeni-k-sftp  "
+                                   atd
