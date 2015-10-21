@@ -9,7 +9,7 @@ ci podobnej srandy zatial napriklad cez SFTP ako: " aiex@195.140.252.48 " a zada
 prihlasit na server cez ssh sa da: ssh aiex@195.140.252.48
 prikazom " mc " sa spusti "midnajt komanč"  
 
-Edit (@tukusejssirs): Na server by sa malo dat pripojit cez akykolvek ftp klient: pouzitim SFTP
+Edit (@tukusejssirs): Na server sa da pripojit cez akykolvek ftp klient: pouzitim SFTP
 - host: `195.140.252.48`,
 - user: `aiex`,
 - pass: `maslo`,
