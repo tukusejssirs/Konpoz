@@ -26,7 +26,7 @@
 ## Stvrty tyzden [30/10/2015 – 6/11/2015]
 #### *Zrealizovanie zobrazenie pozvanok v html5 z db*
 - [ ] automaticke vymazanie neaktualnych pozvanok
-- 
+
 ## Piaty tyzden [6/11/2015 – 13/11/2015]
 #### *Zrealizovanie prihlasovania a vyhladavania*
 - [ ] ?prihlasovanie
