@@ -12,8 +12,8 @@
 
 ## Druhy tyzden [16/10/2015 – 23/10/2015]
 #### Webhosting; zaklad webstranky (html5/css3)*
-- [ ] registracia webhostingu a domeny ([diskusia](diskusie/diskusia_webhosting.md))
-- [x] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov) [17/10/2010]
+- [x] registracia webhostingu a verejnej ip ([diskusia](diskusie/diskusia_webhosting.md)) - Zoran [~19/10/2015]
+- [x] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov) - Otto [17/10/2010]
 - [ ] zapisanie mapy stranky do html5 & css3 (Sida)
 
 ## Treti tyzden [23/10/2015 – 30/10/2015]
