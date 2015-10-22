@@ -64,7 +64,3 @@
 
 - [jsfiddle.net](http://jsfiddle.net/) (real-time testovanie javascriptu)
 - [w3schools.org](http://www.w3schools.com/] (tutorialy na css3, html5, javascript)
-
-Otto
-- [ ] github autosync dir (on client lnx/win)
-- [ ] autosync to web hosting storage
