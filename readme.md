@@ -11,8 +11,9 @@
 - [x] [navrh html5 stranky s formularom](webstranka/index.html) - Zoran [12/10/2015]
 
 ## Druhy tyzden [16/10/2015 – 23/10/2015]
-#### Webhosting; zaklad webstranky (html5/css3)
+#### *Webhosting; zaklad webstranky (html5/css3)*
 - [x] registracia webhostingu a verejnej ip ([diskusia](diskusie/diskusia_webhosting.md)) - Zoran [~19/10/2015]
+- [x] debian, postgresql & upload *.php a db - Zoran [~19/10/2015]
 - [x] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov) - Otto [17/10/2010]
 - [ ] zapisanie mapy stranky do html5 & css3 (Sida)
 
