@@ -11,17 +11,16 @@
 - [x] [navrh html5 stranky s formularom](webstranka/index.html) - Zoran [12/10/2015]
 
 ## Druhy tyzden [16/10/2015 – 23/10/2015]
-#### *Webhosting; zaklad webstranky (html5/css3)*
+#### *Webhosting; zrealizovanie formularu (interaktivny zapis do db)*
 - [x] registracia webhostingu a verejnej ip ([diskusia](diskusie/diskusia_webhosting.md)) - Zoran [~19/10/2015]
 - [x] debian, postgresql & upload `*.php` a `db` - Zoran [~19/10/2015]
 - [x] navrh mapy stranky a predbezneho dizajnu (bez extra kodu, iba slovne, prip pomocou obrazkov) - Otto [17/10/2010]
-- [ ] zapisanie mapy stranky do html5 & css3 (Sida)
 
 ## Treti tyzden [23/10/2015 – 30/10/2015]
-#### *Zrealizovanie formularu (interaktivny zapis do db)*
-- [ ] formular (v spolupraci s db) (Sida, Zoran, Otto)
-      - vytvorenie textovych poli
-      - tlacidlo `submit` (php/javascript)
+#### *Design webstranky*
+- [ ] zapisanie mapy stranky do html5 & css3 (Sida)
+- [ ] design formularu (Sida, Zoran, Otto)
+- [ ] vytvorenie php tlacidiel z nazvov tabulky prezentacii pre zoradenie prezentacii podla daneho stlpca
 
 ## Stvrty tyzden [30/10/2015 – 6/11/2015]
 #### *Zrealizovanie zobrazenie pozvanok v html5 z db*
