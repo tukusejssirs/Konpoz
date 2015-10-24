@@ -4,7 +4,7 @@ Formular na vkladanie pozvanok (insert.php) sa nachadza [tu](http://195.140.252.
 
 Pre editaciu kodov sa musite pripojit pomocou Putty, Totalcomanc, alebo Midnajt komandera,
 ci podobnej srandy zatial napriklad cez SFTP ako `aiex@195.140.252.48` a zadate heslo `maslo`,
-(neskor doriesime ssh kluce) zdrojaky su umiestnene v zlozke: `/var/www/`
+(neskor doriesime ssh kluce) subory webstranky su umiestnene v zlozke: `/var/www/`, v ktorej sa po prihlaseni budete nachadzat (`/var/www` = `~` = `$HOME` = `$home` = `$domov`).
 
 prihlasit na server cez ssh sa da: `ssh aiex@195.140.252.48`
 prikazom `mc` sa spusti "midnajt komanč"  
