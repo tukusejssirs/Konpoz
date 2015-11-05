@@ -1,6 +1,6 @@
 #Mame spojazdneny server!
 
-Formular na vkladanie pozvanok (insert.php) sa nachadza [tu](http://195.140.252.48/insert.php) a aktualna tabulka s pozvankami (odpoved.php) [tu](http://195.140.252.48/odpoved.php).
+Formular na vkladanie pozvanok (insert.php) sa nachadza [tu](http://195.140.254.159/insert.php) a aktualna tabulka s pozvankami (odpoved.php) [tu](http://195.140.254.159/odpoved.php).
 
 Pre editaciu kodov sa musite pripojit pomocou Putty, Totalcomanc, alebo Midnajt komandera,
 ci podobnej srandy zatial napriklad cez SFTP ako `aiex@195.140.252.48` a zadate heslo `maslo`,
