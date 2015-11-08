@@ -2,8 +2,8 @@
 2. dedlajn datum prihlasenia (z formulara do databazy);
 3. datum konani (z formulara do databazy);
 
-- aktualny datum > dedlajn datum prihlasenia => prihlasovaci formular == kos;
-- aktualny datum > datum konania => oznam o konani akcie == kos;
+- aktualny datum > dedlajn datum prihlasenia => prihlasovaci formular == delete;
+- aktualny datum > datum konania => oznam o konani akcie == delete;
 - zobraz zoznam konania akcii (z databazy do html);
 
 |akcia menom |   datum konania | dedlajn prihlasenia |
