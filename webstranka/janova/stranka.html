@@ -15,54 +15,56 @@
 </head>
 
 <body>
-<div id="wrapper">
-<div id="header">
-</div>
-<div id="content">
+	<div id="wrapper">
+		<div id="header">
+	</div>
+	<div id="content">
 
-<h2 id="konf">Konferencia</h2>
-<div id="animate">
-<img src="" id="a" alt="cni" width="100%" height="100%"/>
-<script type="text/javascript">
-img = document.getElementById("a");
-imageArray = new Array("obrazky/a.jpg","obrazky/b.jpg","obrazky/c.jpg");
-i = 0;
-myInterval = setInterval(changeImage, 3000);
-function changeImage() {
-img.setAttribute("src",imageArray[i]);
-i++;
-if (i == imageArray.length){
-i = 0;
-}
-}
-img.onclick = function() {
-clearInterval(myInterval);
-}
-</script>
-</div>
-<div >
+		<h2 id="konf">Konferencia</h2>
+		<div id="animate">
+			<img src="" id="a" alt="cni" width="100%" height="100%"/>
+			<script type="text/javascript">
+				img = document.getElementById("a");
+				imageArray = new Array("obrazky/a.jpg","obrazky/b.jpg","obrazky/c.jpg");
+				i = 0;
+				myInterval = setInterval(changeImage, 3000);
 
+				function changeImage() {
+					img.setAttribute("src",imageArray[i]);
+					i++;
 
-<h2 id="o">Tabulka</h2>
+					if (i == imageArray.length){
+						i = 0;
+					}
+				}
 
-<script type="text/javascript">
-$("#o").click(function(){
-$("#tabulka").slideToggle(500);
-});
-</script>
-</div>
-<div id="formular">
-+<h2> &nbsp &nbsp Zápis dátumov do databázy</h2>
-+<ul>
-+<form name="insert" action="insert.php" method="POST" >
-+<li>Názov</li><li><input type="text" name="nazov" /></li>
-+<li>Dedlajn prihlášky </li><li><input type="date" name="prihlaska" /></li>
-+<li>Dátum konania </li><li><input type="date" name="datum" /></li>
-+
-+<li><input type="submit" /></li>
-+</form>
-+</ul>
-+</html>
+				img.onclick = function() {
+					clearInterval(myInterval);
+				}
+			</script>
+		</div>
+	<div>
+		<h2 id="o">Tabulka</h2>
+
+		<script type="text/javascript">
+			$("#o").click(function(){
+				$("#tabulka").slideToggle(500);
+			});
+		</script>
+	</div>
+	<div id="formular">
+		+<h2> &nbsp &nbsp Zápis dátumov do databázy</h2>
+			+<ul>
+			+<form name="insert" action="insert.php" method="POST" >
+			+<li>Názov</li><li><input type="text" name="nazov" /></li>
+			+<li>Dedlajn prihlá&scaron;ky </li><li><input type="date" name="prihlaska" /></li>
+			+<li>Dátum konania </li><li><input type="date" name="datum" /></li>
+			+
+			+<li><input type="submit" /></li>
+			+</form>
+			+</ul>
+			+</html>
+
 +<?php
 +   $host        = "host=127.0.0.1";
 +   $port        = "port=5432";
