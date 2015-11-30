@@ -21,7 +21,8 @@
 	<div id="content">
 
 		<h2 id="konf">Konferencia</h2>
-		<div id="animate">
+<!-- javascript -->
+<!--		<div id="animate">
 			<img src="" id="a" alt="cni" width="100%" height="100%"/>
 			<script type="text/javascript">
 				img = document.getElementById("a");
@@ -43,6 +44,7 @@
 				}
 			</script>
 		</div>
+-->
 	<div>
 		<h2 id="o">Tabulka</h2>
 
@@ -53,33 +55,33 @@
 		</script>
 	</div>
 	<div id="formular">
-		+<h2> &nbsp &nbsp Zápis dátumov do databázy</h2>
-			+<ul>
-			+<form name="insert" action="insert.php" method="POST" >
-			+<li>Názov</li><li><input type="text" name="nazov" /></li>
-			+<li>Dedlajn prihlá&scaron;ky </li><li><input type="date" name="prihlaska" /></li>
-			+<li>Dátum konania </li><li><input type="date" name="datum" /></li>
-			+
-			+<li><input type="submit" /></li>
-			+</form>
-			+</ul>
-			+</html>
+		<h2>Z&aacute;pis d&aacute;tumov do datab&aacute;zy</h2>
+			<ul>
+			<form name="insert" action="insert.php" method="POST" >
+			<li>N&aacute;zov</li><li><input type="text" name="nazov" /></li>
+			<li>Dedlajn prihl&aacute;&scaron;ky </li><li><input type="date" name="prihlaska" /></li>
+			<li>D&aacute;tum konania </li><li><input type="date" name="datum" /></li>
+			
+			<li><input type="submit" /></li>
+			</form>
+			</ul>
+			</html>
 
-+<?php
-+   $host        = "host=127.0.0.1";
-+   $port        = "port=5432";
-+   $dbname      = "dbname=konpoz";
-+   $credentials = "user=aiex password=veslo";
-+
-+   $db = pg_connect( "$host $port $dbname $credentials"  );
-+   if(!$db){
-+      echo "Error : spojenie s databazou je nefunkcne \n";
-+   } else {
-+      echo " &nbsp &nbsp &nbsp Spojenie s databazou je funkcne\n";
-+   }
-+$query = "INSERT INTO podujatia VALUES ('$_POST[nazov]','$_POST[prihlaska]','$_POST[datum]')";
-+$result = pg_query($query); 
-+?>
+<?php
+   $host        = "host=127.0.0.1";
+   $port        = "port=5432";
+   $dbname      = "dbname=konpoz";
+   $credentials = "user=aiex password=veslo";
+
+   $db = pg_connect( "$host $port $dbname $credentials"  );
+   if(!$db){
+      echo "Error : spojenie s databazou je nefunkcne \n";
+   } else {
+      echo " &nbsp &nbsp &nbsp Spojenie s databazou je funkcne\n";
+   }
+$query = "INSERT INTO podujatia VALUES ('$_POST[nazov]','$_POST[prihlaska]','$_POST[datum]')";
+$result = pg_query($query); 
+?>
 <?php echo "Dnes je <b>".date("j.n.20y.")."</b><br>\n"; 
    $host        = "host=127.0.0.1";
    $port        = "port=5432";
@@ -98,60 +100,60 @@
 <?php 
  include "spojenie.php";
 -$query = 'select * from podujatia order by nazov';
-+//$query = 'DELETE FROM podujatia WHERE ctid NOT IN (SELECT max(ctid) FROM podujatia GROUP BY podujatia.*)' ;
-+//zobrazenie celeho zoznamu (podla 
-+$dopyt = 'select * from podujatia order by nazov';
-+//$query = "SELECT * FROM podujatia WHERE prihlaska BETWEEN '1.2.2015' AND current_date";
-+//$dopyt = "SELECT * FROM podujatia WHERE datum BETWEEN '12.1.2015' AND current_date";
-+//vymazanie duplicitnych zaznamov
+//$query = 'DELETE FROM podujatia WHERE ctid NOT IN (SELECT max(ctid) FROM podujatia GROUP BY podujatia.*)' ;
+//zobrazenie celeho zoznamu (podla 
+$dopyt = 'select * from podujatia order by nazov';
+//$query = "SELECT * FROM podujatia WHERE prihlaska BETWEEN '1.2.2015' AND current_date";
+//$dopyt = "SELECT * FROM podujatia WHERE datum BETWEEN '12.1.2015' AND current_date";
+//vymazanie duplicitnych zaznamov
  
 -$result = pg_query($query);
-+
-+
-+$odpoved = pg_query($dopyt);
+
+
+$odpoved = pg_query($dopyt);
  
  $i = 0;
  echo '<html><body><table><tr>';
  echo '<table border="2" cellpadding="5" cellspacing="4">';
 -while ($i < pg_num_fields($result))
-+
-+while ($i < pg_num_fields($odpoved))
+
+while ($i < pg_num_fields($odpoved))
  {
 -	$fieldName = pg_field_name($result, $i);
 -	echo '<td>' . $fieldName . '</td>';
-+	$poleMenom = pg_field_name($odpoved, $i);
-+	echo '<td>' . $poleMenom . '</td>';
+	$poleMenom = pg_field_name($odpoved, $i);
+	echo '<td>' . $poleMenom . '</td>';
  	$i = $i + 1;
  }
  echo '</tr>';
  $i = 0;
  
 -while ($row = pg_fetch_row($result)) 
-+while ($riadok = pg_fetch_row($odpoved)) 
+while ($riadok = pg_fetch_row($odpoved)) 
  {
  	echo '<tr>';
 -	$count = count($row);
-+	$odpocet = count($riadok);
+	$odpocet = count($riadok);
  	$y = 0;
 -	while ($y < $count)
-+
-+
-+	while ($y < $odpocet)
+
+
+	while ($y < $odpocet)
  	{
 -		$c_row = current($row);
-+		$c_row = current($riadok);
+		$c_row = current($riadok);
  		echo '<td>' . $c_row . '</td>';
 -		next($row);
-+		next($riadok);
+		next($riadok);
  		$y = $y + 1;
-+
-+
+
+
  	}
  	echo '</tr>';
  	$i = $i + 1;
  }
 -pg_free_result($result);
-+pg_free_result($odpoved);
+pg_free_result($odpoved);
  
  echo '</table></body></html>';
     

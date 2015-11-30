@@ -1,4 +1,3 @@
-/* font faces */
 @font-face {
 font-family: "Linux Libertine G";
 src: url("fnts/linlibg_r.woff") format('woff');
@@ -36,41 +35,12 @@ font-style: italic;
 font-weight: 600;
 }
 
-/* main elements */
+/*#########################################################################################*/
+
 body{
 font-family: "Linux Libertine G";
 }
 
-h1, h2{
-text-align: center;
-}
-
-section{
-float: left;
-margin: 0 1%;
-padding:10px;
-padding-bottom: 100px;
-width: 63%;
-}
-
-aside{
-margin: -20 1%;
-width: 30%;
-float: right;
-padding-bottom: 100px;
-}
-
-footer{
-font-family: "Linux Libertine G";
-text-align: center;
-font-size: 11pt;
-position: absolute;
-bottom: 0;
-width: 99%;
-height: 80px;
-}
-
-/* link elements */
 a:link{
 text-decoration: none;
 color:#0066FF;
@@ -89,7 +59,21 @@ a:active{
 text-decoration: none;
 }
 
-/* table elements *//*
+h1, h2{
+text-align:center;
+}
+
+article{
+padding:10px;
+padding-bottom:30px;
+width: 86%;
+}
+
+aside{
+margin: 0 1%;
+width: 10%;
+}
+
 table{
 margin: 0 auto;
 }
@@ -152,9 +136,17 @@ div>span.comma{
 width: 0em;
 text-align:center;
 }
-*/
 
-/* copyleft */
+footer{
+font-family: "Linux Libertine G";
+text-align: center;
+font-size: 11pt;
+position:absolute;
+bottom:0;
+width:99%;
+height:30px;
+}
+
 .copyleft{
 display: inline-block;
 text-align: right;
