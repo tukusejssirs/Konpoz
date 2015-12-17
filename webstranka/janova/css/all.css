@@ -96,17 +96,44 @@ text-decoration: none;
 }
 
 /*  forms */
-.form{
+input{
+	height: 30px;
+	border: 1px solid #222222;
+	border-radius: 20px;
+	background-color: #0000E6;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Ubuntu";
+	width: 85%;
 }
+
+input:hover{
+	height: 30px;
+	border: 1px solid #222222;
+	border-radius: 20px;
+	background-color: #3333FF;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Ubuntu";
+	width: 85%;
+	font-weight: bold;
+}
+
 /*
 input[type=submit]{
 	width: 85%;
 	radius: 30px;
 }*/
-.submit{
-	text-align: center;
+input[type=submit]{
+	background-color: black;
+	color: #00aa00;
+	font-weight: bold;
 }
-	
+
+input[type=submit]:hover{
+	background-color: #222222;
+	color: #00ff00;
+}	
 
 /* table elements *//*
 table{
