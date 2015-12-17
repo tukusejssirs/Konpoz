@@ -1,7 +1,17 @@
-<html>
- <body>
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<title>Pozvánky na konferencie</title>
+	<meta charset="UTF-8">
+	<link href="css/all.css" type="text/css" rel="stylesheet"/>
+	<!-- odkomentuj, prip uprav nasledovny riadok, ked uz bude vytvoreny favicon -->
+	<!--	<link rel="icon" href="favicon.png" type="image/png"> -->
+</head>
+
+<body>
 	<h2>Tabuľka jednotlivých podujatí</h2>
- </body>
+</body>
 </html>
 
 
