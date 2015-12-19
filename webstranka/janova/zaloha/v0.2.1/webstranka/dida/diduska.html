@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="designe.css">
+<style> 
+</style>
+<meta charset="utf-8">
+<title> Konferencia </title>
+ <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="calendarview.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        Calendar.setup({
+          dateField     : 'date',
+          parentElement : 'calendar'
+        })
+      }
+    </script>
+</head>
+
+
+<body>
+<h1>Plánovač konferencií</h1>
+<p>Kalendar podujati</p>
+	<input calendar>
+
+
+<form action="insert.php">
+	<fieldset>
+		<legend>Pridať konferenciu</legend>
+	
+	Názov <br>
+	<input type="text" name="nazov" value="Názov konferencie">
+	<br>
+	Deadline prihlášky <br>
+	<input type="date" name="deadline" value="mm/dd/yyyy">
+	<br>
+	Dátum konania
+	<br>
+	<input type="date" name="datum" value="mm/dd/yyyy">
+	<br>
+	<input type="submit" value="Vlož">
+	</fieldset>
+		
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

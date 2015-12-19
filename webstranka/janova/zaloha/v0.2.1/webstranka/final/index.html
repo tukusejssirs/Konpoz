@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+   <title>zápis do databazy postgresql php skriptom</title>
+   <meta charset="UTF-8">
+   <style>
+      li {list-style: none;}
+   </style>
+   <!-- odkomentuj, prip uprav nasledovny riadok, ked uz bude vytvoreny favicon -->
+   <!--	<link rel="icon" href="favicon.png" type="image/png"> -->
+</head>
+
+<body>
+   <h2>Zápis dátumov do databázy</h2>
+   <ul>
+      <form name="insert" action="insert.php" method="POST" >
+         <li>Názov</li>
+         <li>
+            <input type="text" name="nazov" />
+         </li>
+         <li>Dedlajn prihlášky</li>
+         <li>
+            <input type="date" name="prihlaska" />
+         </li>
+         <li>Dátum konania</li>
+         <li>
+            <input type="date" name="datum" />
+         </li>
+         <li>
+            <input type="submit" />
+         </li>
+      </form>
+   </ul>
+</body>
+</html>
+<?php
+   include "spojenie.php";
+   $query = "INSERT INTO podujatia VALUES ('$_POST[nazov]','$_POST[prihlaska]','$_POST[datum]')";
+   $result = pg_query($query); 
+?>
