@@ -15,18 +15,20 @@
 </html>
 
 
-<?php 
+<?php
 include "spojenie.php";
-//$query = 'DELETE FROM podujatia WHERE ctid NOT IN (SELECT max(ctid) FROM podujatia GROUP BY podujatia.*)' ;
-//zobrazenie celeho zoznamu (podla 
-$dopyt = 'select * from podujatia order by nazov';
-//$query = "SELECT * FROM podujatia WHERE prihlaska BETWEEN '1.2.2015' AND current_date";
-//$dopyt = "SELECT * FROM podujatia WHERE datum BETWEEN '12.1.2015' AND current_date";
+//zobrazenie celeho zoznamu (podla)
+$dopyt = 'select * from akcie order by datum';
+//$dopyt = "SELECT * FROM akcie WHERE datum BETWEEN '12.1.2015' AND current_date";
+//-------------------------------------------------------------------------------
 //vymazanie duplicitnych zaznamov
-
-
-
+$dopyt2 = pg_exec('DELETE FROM akcie WHERE ctid NOT IN (SELECT max(ctid) FROM akcie GROUP BY akcie.*)');
+//-------------------------------------------------------------------------------
+//-------vymazanie-passe--datumov------------------------------------------------
+//$vymazanie_neaktualnych = pq_exec('DELETE FROM akcie WHERE datum < ');
+//-------vypis z tabulky databazy------------------------------------------------
 $odpoved = pg_query($dopyt);
+
 
 $i = 0;
 echo '<html><body><table><tr>';
@@ -63,6 +65,15 @@ while ($riadok = pg_fetch_row($odpoved))
 pg_free_result($odpoved);
 
 echo '</table></body></html>';
-   
+
+
+//---------------------------------------------------------------------------
+//------echo-uspesnosti-dopytu2----------------------------------------------
+    if ($dopyt2):
+        echo "<br>Duplicitne zaznamy su vymazane.";
+    else:
+        echo "<br>Duplicitne zaznamy sa nepodarilo vymazat.";
+    endif;
+//---------------------------------------------------------------------------   
 ?>
 
