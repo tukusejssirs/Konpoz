@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<title>Pozvánky na konferencie</title>
+	<meta charset="UTF-8">
+	<link href="css/all.css" type="text/css" rel="stylesheet"/>
+	<!-- odkomentuj, prip uprav nasledovny riadok, ked uz bude vytvoreny favicon -->
+	<!--	<link rel="icon" href="favicon.png" type="image/png"> -->
+</head>
+
+<body>
+	<header>
+		<h1>Pozvánky na konferencie</h1>
+	</header>
+	<section>
+		<p>Tu bude zoznam pozvánok.<p>
+		<?php echo date('l, F jS, Y')"; ?>
+<!--		<?php echo "Dnes je <b>".date("j.n.20y.")."</b><br>\n"; ?> -->
+
+	</section>
+	<aside>
+	<h2>Pridaj konferenciu</h2>
+	<ul>
+		<form class="forms" name="insert" action="test_aio/insert_only.php" method="POST" >
+			<input type="text" name="nazov" placeholder="Názov konferencie" accesskey="k" />
+			<input type="date" name="prihlaska" placeholder="Dokedy sa dá prihlásiť" accesskey="r"/>
+			<input type="date" name="datum" placeholder="Dátum konania" accesskey="d"/>
+			<input type="text" name="info" placeholder="Krátky popis" accesskey="p"/>
+			<div class="submit">
+				<input class="submit" type="submit" value="Pridaj konferenciu" accesskey="s" />
+			</div>
+		</form>
+	</ul>
+	</aside>
+	<footer>
+		<p><span class="copyleft">©</span></a> GNU GPLv3<br>Študenti AIEX UMB<br>2. ročník Bc.<br>2016</p>
+	</footer>
+</body>
+</html>
+
+
+<!-- TODO
+##############
+
+- po odoslani formulara nech sa vrati spat na tuto stranku
+- odpoved.php (tabulka) sa ma zobrazit na tejto stranke
+
+-->

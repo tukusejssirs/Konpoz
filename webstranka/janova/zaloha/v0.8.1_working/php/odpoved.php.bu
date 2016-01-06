@@ -1,0 +1,68 @@
+<?php 
+include "spojenie.php";
+
+// zobrazenie celeho zoznamu podla datumu
+//$dopyt = 'select * from podujatia order by datum';
+//$dopyt = 'select nazov as `Názov konferencie`, prihlaska as `Do kedy je možné sa prihlásiť`, datum as `Dátum konferencie`, info as `Krátky popis`, * from podujatia order by datum';
+$dopyt = 'select nazov as `Názov konferencie` from podujatia order by datum';
+
+
+// ???
+//$dopyt = "SELECT * FROM podujatia WHERE datum BETWEEN '12.1.2015' AND current_date";
+
+//vymazanie duplicitnych zaznamov
+$dopyt2 = pg_exec('DELETE FROM podujatia WHERE ctid NOT IN (SELECT max(ctid) FROM podujatia GROUP BY podujatia.*)');
+
+// vymazanie starych neaktualnych datumom (starsie ako dnes, no dnes sa este necha)
+//$vymazanie_neaktualnych = pq_exec('DELETE FROM podujatia WHERE datum < ');
+
+// vypis tabulky databazy
+$odpoved = pg_query($dopyt);
+
+//select nazov as `Názov konferencie`, prihlaska as `Do kedy je možné sa prihlásiť`, datum as `Dátum konferencie`, info as `Krátky popis` from podujatia
+
+$i = 0;
+echo '<html><body><table class="db"><tr>';
+echo '<table border="2" cellpadding="5" cellspacing="4">';
+
+while ($i < pg_num_fields($odpoved))
+{
+	$poleMenom = pg_field_name($odpoved, $i);
+	echo '<th>' . $poleMenom . '</th>';
+	++$i;
+}
+echo '</tr>';
+$i = 0;
+
+while ($riadok = pg_fetch_row($odpoved)) 
+{
+	echo '<tr>';
+	$odpocet = count($riadok);
+	$y = 0;
+
+
+	while ($y < $odpocet)
+	{
+		$c_row = current($riadok);
+		echo '<td>' . $c_row . '</td>';
+		next($riadok);
+		$y = $y + 1;
+
+
+	}
+	echo '</tr>';
+	$i = $i + 1;
+}
+pg_free_result($odpoved);
+
+echo '</table></body></html>';
+//---------------------------------------------------------------------------
+//------echo-uspesnosti-dopytu2----------------------------------------------
+//    if ($dopyt2):
+//        echo "<br>Duplicitne zaznamy su vymazane.";
+//    else:
+//        echo "<br>Duplicitne zaznamy sa nepodarilo vymazat.";
+//    endif;
+//---------------------------------------------------------------------------   
+?>
+
