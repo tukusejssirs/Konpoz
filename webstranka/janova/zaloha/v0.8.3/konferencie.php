@@ -14,12 +14,12 @@
 		<h1>Pozvánky na konferencie</h1>
 	</header>
 	<section>
-		<?php include "php/output.php"; ?>
+		<?php include "php/odpoved.php"; ?>
 	</section>
 	<aside>
 	<h2>Pridaj konferenciu</h2>
 	<ul>
-		<form class="forms" name="insert" action="php/input.php" method="POST" >
+		<form class="forms" name="insert" action="php/insert.php" method="POST" >
 			<input type="text" name="nazov" placeholder="Názov konferencie" accesskey="k" />
 			<input type="date" name="datum" placeholder="Dátum konferencie" accesskey="d"/>
 			<input type="text" name="info" placeholder="Krátky popis" accesskey="p"/>
