@@ -7,11 +7,13 @@
 
 $spojenie_s_databazou = pg_connect("$host $port $dbname $credentials");
 
-$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Termín prihlásenia do" from podujatia order by datum');
+//$table=pg_query('select nazov as `Názov konferencie`, prihlaska as `Do kedy je možné sa prihlásiť`, datum as `Dátum konferencie`, info as `Krátky popis` from podujatia order by datum ")';
+//or die('<br><br>' . pg_last_error());
 
-// db ($table) export to file (for pure php table re-sorting)
-//$file = 'db_output.txt';
-//file_put_contents($file, "$table", LOCK_EX);
+//$dopyt="select nazov AS Názov from podujatia order by datum";
+//$odpoved = pg_query($dopyt);
+
+$table = pg_query('select nazov as "Názov konferencie", prihlaska as "Do kedy je možné sa prihlásiť", datum as "Dátum konferencie", info as "Krátky popis" from podujatia order by datum');
 
 $i = 0;
 echo '<table><tr>';
@@ -36,12 +38,12 @@ while ($riadok = pg_fetch_row($table))
 		$c_row = current($riadok);
 		echo '<td>' . $c_row . '</td>';
 		next($riadok);
-		++$y;
+		$y = $y + 1;
 
 
 	}
 	echo '</tr>';
-	++$i;
+	$i = $i + 1;
 }
 
 pg_free_result($table);

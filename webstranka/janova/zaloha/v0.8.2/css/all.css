@@ -225,15 +225,6 @@ text-align:center;
 }
 */
 
-.note{ /* make some space betwean the border and the text */
-left: 10px;
-/*margin-right: 10px;*/
-}
-
-.semibold{  /* make the text semibold */
-font-weight: semibold;
-}
-
 /* copyleft */
 .copyleft{
 display: inline-block;
