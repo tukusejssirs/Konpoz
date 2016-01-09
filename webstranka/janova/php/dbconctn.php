@@ -1,7 +1,7 @@
 <?php
 	if ($db_connection){
-		echo "Spojenie s databazou je funkcne.";
+		echo "Spojenie s databázou je funkčné.<br>";
 	} else {
-		echo "Error: Spojenie s databazou nie je nefunkcne.";
+		echo "ERROR: Spojenie s databázou nie je funkčné.<br>";
 	}
 ?>

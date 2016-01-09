@@ -1,7 +1,7 @@
 <?php
 	if ($db_duplicates){
-		echo "Duplicitne zaznamy su vymazane.";
+		echo "Duplicitné záznamy sú vymazané.<br>";
 	} else {
-		echo "ERROR: Duplicitne zaznamy sa nepodarilo vymazat.";
+		echo "ERROR: Duplicitné záznamy sa nepodarilo vymazať.<br>";
 	}
 ?>

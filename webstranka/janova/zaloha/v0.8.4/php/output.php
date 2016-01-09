@@ -1,4 +1,4 @@
-<?php
+<?php 
 	include "passwd.php";
 
 	$db_connection = pg_connect("$host $port $dbname $credentials");
@@ -8,22 +8,16 @@
 
 	// db ($table) export to file (for pure php table re-sorting)
 	//$file = 'db_output.txt';
-	//file_put_contents($file, "$table", lock_ex);
+	//file_put_contents($file, "$table", LOCK_EX);
 
 	// remove duplicates
-	$db_duplicates = pg_exec('delete from podujatia where ctid not in (select max(ctid) from podujatia group by podujatia.*)');
-
-	// remove conferences older than today exclusively
-	$db_old_con = pg_exec('DELETE FROM podujatia WHERE datum < current_date');
+	$db_duplicates = pg_exec('DELETE FROM podujatia WHERE ctid NOT IN (SELECT max(ctid) FROM podujatia GROUP BY podujatia.*)');
 
 	// DEBUG: uncomment to test if the duplicates were removed
 	//include "dbdouble.php";
 
         // DEBUG: uncomment to test connection with database
         //include "dbconctn.php";
-
-	// DEBUG: uncomment to test if old conferences were removed
-	//include "dboldcon.php";
 
 	$i = 0;
 	echo '<table><tr>';
