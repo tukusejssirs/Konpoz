@@ -20,16 +20,16 @@
 	<h2>Pridaj konferenciu</h2>
 	<ul>
 		<form class="forms" name="insert" action="php/input.php" method="POST" >
-			<input type="text" name="nazov"     placeholder="Názov konferencie"       accesskey="k" />
+			<input type="text" name="nazov"     placeholder="Názov konferencie"       accesskey="n" />
 			<input type="date" name="datum"     placeholder="Dátum konferencie"       accesskey="d"/>
-			<input type="text" name="info"      placeholder="Krátky popis"            accesskey="p"/>
-			<input type="date" name="prihlaska" placeholder="Termín prihlasovania do" accesskey="r"/>
+			<input type="text" name="info"      placeholder="Krátky popis"            accesskey="k"/>
+			<input type="date" name="prihlaska" placeholder="Ukončenie prihlasovania" accesskey="u"/>
 			<div class="submit">
-				<input class="submit" type="submit" value="Pridaj konferenciu" accesskey="s" />
+				<input class="submit" type="submit" value="Pridaj konferenciu" accesskey= "p" />
 			</div>
 		</form>
 	</ul>
-	<p align="center" class="note">Dátumy zapisovať v tvare <span class="semibold">d/m/r</span> alebo <span class="semibold">r/m/d</span></p>
+	<p align="center" class="note">Dátumy zapisovať v tvare<br><b>d/m/r</b> alebo <b>r/m/d.</b></p>
 	</aside>
 	<footer>
 		<p><span class="copyleft">©</span></a> GNU GPLv3<br><b>Študenti AIEX UMB</b><br>2. ročník Bc.<br>2016</p>

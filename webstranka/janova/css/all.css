@@ -55,6 +55,10 @@ header{
 /*	border-radius: 50%;*/
 }
 
+title{
+	font-variant: small-caps;
+}
+
 h1, h2{
 text-align: center;
 }
@@ -99,12 +103,12 @@ footer{
 /* link elements */
 a:link{
 text-decoration: none;
-color:#0066FF;
+color:black;
 }
 
 a:visited{
 text-decoration: none;
-color:#0066FF;
+color: black;
 }
 
 a:hover{
@@ -160,13 +164,27 @@ input[type=submit]:hover{
 /* table elements */
 table{
 margin: 0 auto;
+/*border-radius: 20px;*/
+/*border-spacing: 4;*/
+}
+/*
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+*/
 table, th, td, tr{
 border: 1px solid black;
 vertical-align: middle;
-border-spacing: 0;
-padding: 10 10 10 10;
+/*border-spacing: 12px;*/
+/*padding: 10 10 10 10;*/
 /*border="2" cellpadding="5" cellspacing="4"*/
 }
 
@@ -177,7 +195,7 @@ th{
 font-weight: bold;
 text-align: center;
 font-size: 14pt;
-background-color: white;
+background-color: lightblue;
 }
 
 .city{
