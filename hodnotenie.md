@@ -2,7 +2,7 @@
 
 Priezvisko, Meno | Popis práce | Ohodnotenie scrum mastera
 -----------------|-------------|---------------------------
-Bolyós, Oto | koordinacia a delba prace, vycistenie a finalizovanie html a css kodu | D
+Bolyós, Oto | koordinacia a delba prace, vycistenie a finalizovanie php, html a css kodu | D
 Chvojka, Ján | spoluvytvorenie html a css | D
 Kõtelešová, Sidónia | navrh rozlozenia webstranky (obrazok); spoluvytvorenie html a css | B
 Lafférsová, Diana | spoluvytvorenie html a css | C
