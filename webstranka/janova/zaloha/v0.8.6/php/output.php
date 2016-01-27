@@ -5,31 +5,31 @@
 	// variable according which column the db should be ordered
 	$sort = $_GET['s'];  // options = nazov | datum | prihlaska | prihlaska
 
-	// variable which way should it be sorted
+	// variable which way (upWARDs or downWARDs) should it be sorted
 	$ward = $_GET['w'];  // options = asc | desc
 
 	switch ($sort . $ward) {
 		case nazov:
 		case nazovasc:
-			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by nazov asc, datum asc'); $name="&amp;w=desc"; break;
+			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by nazov asc, datum asc'); $name="&&w=desc"; break;
 		case nazovdesc:
 			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by nazov desc, datum desc'); break;
 		case info:
 		case infoasc:
-			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by info asc, datum asc'); $info="&amp;w=desc"; break;
+			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by info asc, datum asc'); $info="&&w=desc"; break;
 		case infodesc:
 			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by info desc, datum desc'); break;
 		case prihlaska:
 		case prihlaskaasc:
-			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by prihlaska asc, datum asc'); $reg="&amp;w=desc"; break;
+			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by prihlaska asc, datum asc'); $reg="&&w=desc"; break;
 		case prihlaskadesc:
 			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by prihlaska desc, datum desc'); break;
 		case datum:
 		case datumdesc:
-			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by datum desc, nazov desc'); $date="&amp;w=asc"; break;
+			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by datum desc, nazov desc'); $date="&&w=asc"; break;
 		case datumasc:
 		default:
-			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by datum asc, nazov asc'); $date="&amp;w=desc"; break;
+			$table = pg_query('select nazov as "Názov konferencie", datum as "Dátum konferencie", info as "Krátky popis", prihlaska as "Ukončenie prihlasovania" from podujatia order by datum asc, nazov asc'); $date="&&w=desc"; break;
 	}
 
 	$i=0;
@@ -42,7 +42,7 @@
 				if ($name){
 					$sorting = $name;
 				}else{
-					$sorting = "&amp;w=asc";
+					$sorting = "&&w=asc";
 				}
 				break;
 			case 1:
@@ -50,7 +50,7 @@
 				if ($date){
 					$sorting = $date;
 				}else{
-					$date = "&amp;w=desc";
+					$date = "&&w=desc";
 				}
 				break;
 			case 2:
@@ -58,7 +58,7 @@
 				if ($info){
 					$sorting = $info;
 				}else{
-					$sorting = "&amp;w=asc";
+					$sorting = "&&w=asc";
 				}
 				break;
 			case 3:
@@ -66,7 +66,7 @@
 				if ($reg){
 					$sorting = $reg;
 				}else{
-					$sorting = "&amp;w=asc";
+					$sorting = "&&w=asc";
 				}
 				break;
 		}
@@ -78,7 +78,7 @@
 		$db_old_con = pg_exec('DELETE FROM podujatia WHERE datum < current_date');
 
 		$poleMenom = pg_field_name($table, $i);
-		echo '<th><a href="konferencie.php?s=' . $column . $sorting . '">' . $poleMenom . '</a></th>';
+		echo '<th><a href=konferencie.php?s=' . $column . $sorting . '>' . $poleMenom . '</a></th>';
 		++$i;
 	}
 	echo '</tr>';
@@ -97,4 +97,5 @@
 	}
 	pg_free_result($table);
 	echo '</table>';
+	echo "<br>" . $table . "<br>";
 ?>
